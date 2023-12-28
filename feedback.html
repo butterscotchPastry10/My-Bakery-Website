@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Feedback</title>
+        <style>
+body 
+{
+   background-image: url(pista.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.flat
+{
+    width: 800px;
+    height: 700px;
+    margin: 30px auto;
+}
+
+h1
+{
+    font-size: 70px;
+    color: rgb(230, 29, 96);
+    text-align: center;
+    justify-content: center;
+    border-bottom: 2px solid rgb(230, 29, 96);
+}
+
+table
+{
+    font-size: 20px;
+}
+
+td
+{
+  padding: 30px 20px 0px 0px;
+}
+
+.txt
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    border-color: palevioletred;
+}
+
+.txtarea
+{
+    width: 600px;
+    height: 170px;
+    border-radius: 8px;
+    border-color: palevioletred;
+}
+
+.click
+{
+    width: 600px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: palevioletred;
+}
+        </style>
+    </head>
+
+    <body>
+        <h3>@DeveloperDiSai</h3>
+        <div class = "flat">
+            <table>
+                <form action = "" method = "">
+                    <h1>Feedback Form</h1>
+                    <tr>
+                        <td  colspan = "1">
+                            <label>
+                                How do you rate your overall experience in this website
+                            </label>
+                            <br/>
+                            <input type = "radio" name = "rate" value = "average">Average
+                            <input type = "radio" name = "rate" value = "good">Good
+                            <input type = "radio" name = "rate" value = "VeryGood">Very Good
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Full Name</label>
+                        <br/>
+                    <input type = "text" name = "Full Name" class = "txt">
+                </td>
+                <td>
+                    <label>Email</label>
+                    <br/>
+                <input type = "email" name = "Email" class = "txt">
+                </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Phone No.</label>
+                        <br/>
+                    <input type = "text" name = "Phone" class = "txt">
+                </td>
+                <td>
+                    <label>Age</label>
+                    <br/>
+                <input type = "text" name = "Age" class = "txt">
+                </td>
+                    </tr>
+                    <tr>
+                        <td colspan = "2">
+                            <label>Message</label>
+                            <br/>
+                            <textarea class = "txtarea"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan = "2"><button type = "Submit" class = "click">Submit</button></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </body>
+</html>

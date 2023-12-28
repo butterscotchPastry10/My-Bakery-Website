@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Gallery</title>
+
+        <link rel = "stylesheet"
+        type = "text/css"
+        href = "style.css"/>
+
+    </head>
+    <body>
+        <h3>@DeveloperDiSai</h3>
+        <div class = "full-img" id = "fullImgBox">
+            <img src = "cake.png" id = "fullImg">
+            <span onclick = "closeFullImg()">X</span>
+        </div>
+        
+        <div>
+            <h1>Top Bakery Items of Our Store</h1>
+            <p>
+                <b>
+                Hope you all will love it
+                </b>
+            </p>
+        </div>
+        <div class = "img-gallery">
+            <img src = "uni.png" onclick = "openFullImg(this.src)">
+            <img src = "cake.png" onclick = "openFullImg(this.src)">
+            <img src = "cake2.png" onclick = "openFullImg(this.src)">
+            <img src = "cookie.png " onclick = "openFullImg(this.src)">
+            <img src = "swiss.png" onclick = "openFullImg(this.src)">
+            <img src = "nut.png" onclick = "openFullImg(this.src)">
+            <img src = "pastry.png" onclick = "openFullImg(this.src)">
+            <img src = "dessert.png" onclick = "openFullImg(this.src)">
+            <img src = "pan.png" onclick = "openFullImg(this.src)">
+            <img src = "pie.png" onclick = "openFullImg(this.src)">
+            <img src = "muffin.png" onclick = "openFullImg(this.src)">
+            <img src = "blue.png" onclick = "openFullImg(this.src)">
+            <img src = "cherry.png" onclick = "openFullImg(this.src)">
+            <img src = "roll.png" onclick = "openFullImg(this.src)">
+            <img src = "rose.png" onclick = "openFullImg(this.src)">
+        </div>
+           
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic)
+    {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg()
+     {
+        fullImgBox.style.display = "none";
+     }
+</script>
+    </body>
+</html>
